@@ -39,17 +39,20 @@ export default function RootLayout({
           property="og:description"
           content="Arkitekt Katrine Holm, Oslo. Etablert 2015"
         />
-        <meta property="og:image" content="/img/sha-1.jpg" />
+        <meta property="og:image" content="/img/img1.jpg" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="sharkitekter.vercel.app" />
+        <meta
+          property="twitter:domain"
+          content="https://kitsunearkitekter.no/"
+        />
         <meta property="twitter:url" content="https://kitsunearkitekter.no/" />
         <meta name="twitter:title" content="Kitsune Arkitekter" />
         <meta
           name="twitter:description"
           content="Arkitekt Katrine Holm, Oslo. Etablert 2015"
         />
-        <meta name="twitter:image" content="/img/sha-1.jpg" />
+        <meta name="twitter:image" content="/img/img1.jpg" />
 
         <script
           defer
