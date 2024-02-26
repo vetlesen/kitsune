@@ -21,7 +21,8 @@ a {
   flex-flow: wrap-reverse;
 }
 p,
-a {
+a,
+figcaption {
   line-height: 120%;
   animation-iteration-count: 1;
   text-transform: uppercase;

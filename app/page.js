@@ -8,25 +8,44 @@ import React, { useState } from "react";
 // Example component that changes images on click
 const ImageSwitcher = () => {
   // Array of image URLs
-  const images = ["/img/img1.jpg", "/img/img2.jpg"];
+  const imagesWithCaptions = [
+    { url: "/img/img1.jpg", caption: "Anton Schjøths gate 12" },
+    { url: "/img/img2.jpg", caption: "Anton Schjøths gate 12" },
+    { url: "/img/img3.jpg", caption: "Hytte Steinsfjorden" },
+    { url: "/img/img4.jpg", caption: "Kildeveien 12" },
+    { url: "/img/img5.jpg", caption: "Anton Schjøths gate 12" },
+    { url: "/img/img6.jpg", caption: "Anton Schjøths gate 12" },
+    { url: "/img/img7.jpg", caption: "Thurmanns gate" },
+    { url: "/img/img8.jpg", caption: "Thurmanns gate" },
+    { url: "/img/img9.jpg", caption: "Veksthusfløtten 30" },
+    { url: "/img/img10.jpg", caption: "Hytte Steinsfjorden" },
+    { url: "/img/img11.jpg", caption: "Ås Hageby" },
+  ];
   const [currentIndex, setCurrentIndex] = useState(0);
+
   const switchImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length); // Loop back to the first image after the last
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % imagesWithCaptions.length); // Loop back to the first image after the last
   };
 
   return (
-    <figure className="">
+    <figure className="cursor-pointer" onClick={switchImage}>
       <Image
-        onClick={switchImage} // Switch image on click
-        alt="Kitsune Arkitekter"
+        alt={imagesWithCaptions[currentIndex].caption} // Use the caption as alt text
         className="object-cover"
-        height={200}
-        width={400}
-        src={images[currentIndex]} // Display the current image
+        height={600}
+        width={500}
+        src={imagesWithCaptions[currentIndex].url} // Display the current image
         style={{
           display: "block",
         }}
       />
+      <figcaption className="text-sm flex justify-between">
+        {imagesWithCaptions[currentIndex].caption}{" "}
+        <span>
+          {currentIndex + 1}/{imagesWithCaptions.length}
+        </span>
+      </figcaption>
+      {/* Display the caption */}
     </figure>
   );
 };
@@ -36,7 +55,7 @@ export default function Home() {
     <main className="flex flex-row  justify-between h-[100vh]	flex--flow w-full">
       <div className="flex flex-col stagger justify-between p-4">
         <p>KITSUNE ARKITEKTER</p>
-        <div className="flex flex-col stagger">
+        <div className="flex flex-col stagger pt-6 text-sm">
           <Link
             className="hover:underline"
             href="mailto:katrine@kitsunearkitekter.no "
