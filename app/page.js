@@ -73,7 +73,7 @@ export default function Home() {
 
           <Link
             className="hover:underline"
-            href="https://www.instagram.com/steinhalvorsenarkitekter/"
+            href="https://www.instagram.com/kitsune.arkitekter/"
             target="_blank"
           >
             Instagram
