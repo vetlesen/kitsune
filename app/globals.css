@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+  font-family: Helvetica, sans-serif;
+}
+
+.flex--flow {
+  flex-flow: wrap-reverse;
+}
+p,
+a {
+  line-height: 120%;
+  animation-iteration-count: 1;
+  text-transform: uppercase;
+}
+
+body {
+  animation: load 1.2s infinite ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes load {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes img {
+  0% {
+    opacity: 0%;
+  }
+  10% {
+    opacity: 0%;
+  }
+  15% {
+    opacity: 100%;
+  }
+  85% {
+    opacity: 100%;
+  }
+  90% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
