@@ -39,7 +39,7 @@ export default function RootLayout({
           property="og:description"
           content="Arkitekt Katrine Holm, Oslo. Etablert 2015"
         />
-        <meta property="og:image" content="/img/img1.jpg" />
+        <meta property="og:image" content="/img/img2.jpg" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta
@@ -52,7 +52,7 @@ export default function RootLayout({
           name="twitter:description"
           content="Arkitekt Katrine Holm, Oslo. Etablert 2015"
         />
-        <meta name="twitter:image" content="/img/img1.jpg" />
+        <meta name="twitter:image" content="/img/img2.jpg" />
 
         <script
           defer
